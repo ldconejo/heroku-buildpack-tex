@@ -74,10 +74,10 @@ tlmgr option repository "$TEXLIVE_REPOSITORY"
 tlmgr update --self
 
 # install user-provided-packages
-if [ -f "$BUILD_DIR/texlive.packages" ]; then
+if [ -f "$BIN_DIR/../conf/texlive.packages" ]; then
     build-step "Installing custom packages..."
     # shellcheck disable=SC2046
-    tlmgr install $(cat "$BUILD_DIR/texlive.packages")
+    tlmgr install $(cat "$BIN_DIR/../conf/texlive.packages")
 fi
 
 build-step "Updating installed packages..."
