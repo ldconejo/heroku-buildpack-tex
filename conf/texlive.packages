@@ -18,14 +18,8 @@ xetex
 xltxtra
 xunicode
 yafoot
-calc
-dblfnote
 etoolbox
 fancyhdr
 fp
 geometry
-graphicx
-longtable
-multicol
-tikz
 xkeyval
