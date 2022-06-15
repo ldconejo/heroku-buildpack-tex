@@ -1,8 +1,6 @@
 anyfontsize
 booktabs
-calc
 changepage
-dblfnote
 enumitem
 environ
 etoolbox
@@ -11,15 +9,11 @@ fontspec
 footmisc
 fp
 geometry
-graphicx
-longtable
-multicol
 needspace
 polyglossia
 tcolorbox
-tikz
 titlesec
 xcolor
-xeCJK
+xecjk
 xkeyval
 xstring
