@@ -10,7 +10,7 @@ BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
 
 
 TEXLIVE_REPOSITORY="http://mirror.ctan.org/systems/texlive/tlnet"
-TEXLIVE_REPOSITORY="http://ftp.math.utah.edu/pub/texlive/historic/systems/texlive/2022/tlnet-final"
+#TEXLIVE_REPOSITORY="http://ftp.math.utah.edu/pub/texlive/historic/systems/texlive/2022/tlnet-final"
 
 # TODO: remove this in future versions.
 # This is only kept for backwards support
@@ -70,6 +70,7 @@ if [ ! "$(which pdflatex)" ]; then
 fi
 
 build-step "Updating TeX Live..."
+update-tlmgr-latest.sh --update
 
 tlmgr option repository "$TEXLIVE_REPOSITORY"
 tlmgr update --self
